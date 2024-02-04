@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { IoIosLogIn } from "react-icons/io";
 import { Box, Typography, Button } from "@mui/material";
-//import CustomizedInput from "../components/shared/CustomizedInput";
+import CustomizedInput from "../components/shared/CustomizedInput";
 import { toast } from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
@@ -66,8 +66,8 @@ const Login = () => {
             >
               Login
             </Typography>
-            {/* <CustomizedInput type="email" name="email" label="Email" />
-            <CustomizedInput type="password" name="password" label="Password" /> */}
+            <CustomizedInput type="email" name="email" label="Email" />
+            <CustomizedInput type="password" name="password" label="Password" />
             <Button
               type="submit"
               sx={{
